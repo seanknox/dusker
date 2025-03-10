@@ -1,4 +1,4 @@
-# SurfTracker App Development Checklist
+# Dusker App Development Checklist
 
 ## Phase 1: Foundation & Basic Structure
 

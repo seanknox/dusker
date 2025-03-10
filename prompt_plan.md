@@ -63,7 +63,7 @@
 
 Create a new SwiftUI project for a Surf Tracking Apple Watch app called Dusker with the following specifications:
 
-1. Project name: SurfTracker
+1. Project name: Dusker
 2. Include both watchOS and iOS targets
 3. Set up a shared framework for code that will be used by both targets
 4. Configure the project with SwiftUI as the UI framework
@@ -94,7 +94,7 @@ Provide the full project structure and all necessary configuration files.
 
 ## Prompt 2: Core Data Models
 
-Building on our SurfTracker project, implement the Core Data models needed for storing surf session data. Create the following models and relationships:
+Building on our Dusker project, implement the Core Data models needed for storing surf session data. Create the following models and relationships:
 
 1. Create a CoreDataManager class responsible for handling the persistent container and context
 2. Create the SurfSession entity with the following attributes:
@@ -177,7 +177,7 @@ Include unit tests for:
 Make sure all UI elements follow accessibility best practices and support Dynamic Type.
 
 ## Prompt 4: Local Storage Implementation
-Building on our Core Data models and UI structure, implement the local storage functionality for the SurfTracker app:
+Building on our Core Data models and UI structure, implement the local storage functionality for the Dusker app:
 
 1. Create a PersistenceController singleton class that:
    - Manages the Core Data stack
@@ -220,7 +220,7 @@ Building on our Core Data models and UI structure, implement the local storage f
 Ensure thread safety when accessing Core Data and provide methods for both synchronous and asynchronous operations.
 
 ## Prompt 5: Location Services
-Now, let's implement location services for the SurfTracker app to track GPS data during surf sessions:
+Now, let's implement location services for the Dusker app to track GPS data during surf sessions:
 
 1. Create a LocationManager class that:
    - Conforms to NSObject and implements CLLocationManagerDelegate
@@ -271,7 +271,7 @@ All location services should be battery-efficient, as is possible.
 
 ## Prompt 6: Motion Sensor Framework
 
-Let's implement the motion sensor framework that will be crucial for wave detection in our SurfTracker app:
+Let's implement the motion sensor framework that will be crucial for wave detection in our Dusker app:
 
 1. Create a MotionManager class that:
    - Manages access to device motion sensors (accelerometer, gyroscope)
@@ -321,7 +321,7 @@ Ensure the implementation is optimized for watchOS battery life while maintainin
 
 ## Prompt 7: Heart Rate Monitoring
 
-Now, let's implement heart rate monitoring for the SurfTracker app to track physical exertion during surf sessions:
+Now, let's implement heart rate monitoring for the Dusker app to track physical exertion during surf sessions:
 
 1. Create a HeartRateManager class that:
    - Uses HKHealthStore to access heart rate data
@@ -369,7 +369,7 @@ Ensure heart rate monitoring is battery-efficient and continues reliably through
 
 ## Prompt 8: Sensor Data Integration
 
-Let's integrate all our sensor components (location, motion, heart rate) into a unified SensorManager for the SurfTracker app:
+Let's integrate all our sensor components (location, motion, heart rate) into a unified SensorManager for the Dusker app:
 
 1. Create a SensorDataManager protocol that defines:
    - Methods to start/stop all sensors
@@ -426,7 +426,7 @@ Ensure the integrated solution is resilient to sensor failures and optimizes for
 
 ## Prompt 9: Session Controller
 
-Let's implement the session management functionality for the SurfTracker app:
+Let's implement the session management functionality for the Dusker app:
 
 1. Create a SessionController class responsible for:
    - Starting a new surf session
@@ -489,7 +489,7 @@ Ensure that session management is robust against app termination, device reboots
 
 ## Prompt 10: Basic Session UI
 
-Now, let's create the basic session UI components for the SurfTracker app:
+Now, let's create the basic session UI components for the Dusker app:
 
 1. For the watchOS app, create the following views:
    - SessionStartView with:
@@ -611,7 +611,7 @@ Ensure the storage implementation is robust, with proper error handling and reco
 
 ## Prompt 12: Session Metrics Calculation
 
-Let's implement the session metrics calculation functionality for the SurfTracker app:
+Let's implement the session metrics calculation functionality for the Dusker app:
 
 1. Create a MetricsCalculator protocol with methods for:
    - calculateDistance(from coordinates: [GPSCoordinate]) -> Double
@@ -663,7 +663,7 @@ Let's implement the session metrics calculation functionality for the SurfTracke
 Ensure all calculations are accurate, efficient, and handle edge cases appropriately.
 
 ## Prompt 13: Motion Pattern Recognition
-Now, let's implement motion pattern recognition for detecting paddle, stand-up, and wave riding motions in the SurfTracker app:
+Now, let's implement motion pattern recognition for detecting paddle, stand-up, and wave riding motions in the Dusker app:
 
 1. Create a MotionPatternRecognizer protocol defining:
    - func detectPaddleMotion(in samples: [MotionSample]) -> [TimeRange]
@@ -774,7 +774,7 @@ Ensure the implementation is efficient enough for real-time use on the Apple Wat
 
 ## Prompt 15: Wave Storage and Retrieval
 
-Now, let's enhance our wave storage and retrieval capabilities for the SurfTracker app:
+Now, let's enhance our wave storage and retrieval capabilities for the Dusker app:
 
 1. Create a WaveRepository protocol defining:
    - func saveWave(_ wave: Wave, for session: SurfSession) -> Result<Wave, Error>
@@ -888,7 +888,7 @@ Ensure all refinements maintain backwards compatibility with existing data.
 
 ## Prompt 17: HealthKit Authorization
 
-Let's implement HealthKit integration for the SurfTracker app, starting with authorization:
+Let's implement HealthKit integration for the Dusker app, starting with authorization:
 
 1. Create a HealthKitManager class responsible for:
    - Requesting necessary HealthKit permissions
@@ -942,7 +942,7 @@ Ensure all HealthKit usage complies with Apple's privacy guidelines and provide 
 
 ## Prompt 18: Workout Session Recording
 
-Now, let's implement workout session recording with HealthKit for the SurfTracker app:
+Now, let's implement workout session recording with HealthKit for the Dusker app:
 
 1. Create a WorkoutSessionManager class that:
    - Creates and manages HKWorkoutSession
@@ -996,7 +996,7 @@ Ensure the implementation follows Apple's best practices for HealthKit workout s
 
 ## Prompt 19: Health Data Integration
 
-Let's integrate health data more deeply into the SurfTracker app:
+Let's integrate health data more deeply into the Dusker app:
 
 1. Create a HealthDataIntegrator class that:
    - Retrieves relevant health data for context
@@ -1173,7 +1173,7 @@ Ensure the detail view provides comprehensive information while maintaining a cl
 
 ## Prompt 22: Map Visualization
 
-Let's implement advanced map visualization for the SurfTracker app:
+Let's implement advanced map visualization for the Dusker app:
 
 1. Create a SessionMapViewModel that:
    - Manages map state and configuration
@@ -1232,7 +1232,7 @@ Let's implement advanced map visualization for the SurfTracker app:
 Ensure the map visualization is performant even with complex sessions and provides meaningful insights into the surf session. Prefer Non-Google map services like Mapbox.
 
 ## Prompt 23: Insights and Analytics
-Let's implement an insights and analytics system for the SurfTracker app:
+Let's implement an insights and analytics system for the Dusker app:
 
 1. Create an AnalyticsEngine class that:
    - Processes historical session data
@@ -1292,7 +1292,7 @@ Ensure the insights are actionable, relevant to surfers, and presented in an int
 
 ## Prompt 24: iCloud Setup
 
-Let's implement iCloud integration for the SurfTracker app to enable cross-device synchronization:
+Let's implement iCloud integration for the Dusker app to enable cross-device synchronization:
 
 1. Create a CloudKitManager class responsible for:
    - Setting up CloudKit container and database
@@ -1414,7 +1414,7 @@ Ensure the sync service is reliable, efficient with network and battery usage, a
 
 ## Prompt 26: Cross-device Experience
 
-Let's enhance the SurfTracker app with a seamless cross-device experience:
+Let's enhance the Dusker app with a seamless cross-device experience:
 
 1. Implement Handoff support:
    - Enable session continuation between devices
@@ -1474,7 +1474,7 @@ Ensure the cross-device experience feels natural and consistent, with appropriat
 
 ## Prompt 27: Weather/Conditions API
 
-Let's implement weather and surf conditions integration for the SurfTracker app:
+Let's implement weather and surf conditions integration for the Dusker app:
 
 1. Create a WeatherService protocol defining:
    - func getCurrentConditions(at location: CLLocation) -> AnyPublisher<WeatherConditions, Error>
@@ -1533,7 +1533,7 @@ Ensure the weather integration is battery and network efficient, with appropriat
 
 ## Prompt 28: Tide Information
 
-Let's implement comprehensive tide information integration for the SurfTracker app:
+Let's implement comprehensive tide information integration for the Dusker app:
 
 1. Create a TideService protocol defining:
    - func getCurrentTide(at location: CLLocation) -> AnyPublisher<TideInfo, Error>
@@ -1593,7 +1593,7 @@ Ensure tide information is accurate, visually intuitive, and relevant to surfing
 
 ## Prompt 29: Spot Identification
 
-Let's implement surf spot identification and management for the SurfTracker app:
+Let's implement surf spot identification and management for the Dusker app:
 
 1. Create a SpotService protocol defining:
    - func identifySpot(at location: CLLocation) -> AnyPublisher<SurfSpot?, Error>
@@ -1653,7 +1653,7 @@ Ensure the spot identification is accurate, provides valuable context for sessio
 
 ## Prompt 30: UI Polish
 
-Let's implement UI polish and refinement for the SurfTracker app:
+Let's implement UI polish and refinement for the Dusker app:
 
 1. Create a comprehensive design system:
    - Define a complete color palette with semantic naming
@@ -1713,7 +1713,7 @@ Ensure the UI feels polished, cohesive, and purpose-built for surfers using the 
 
 ## Prompt 31: Performance Optimization
 
-Let's optimize the performance of the SurfTracker app, with a particular focus on battery efficiency:
+Let's optimize the performance of the Dusker app, with a particular focus on battery efficiency:
 
 1. Implement intelligent sensor usage:
    - Create adaptive sensor sampling rates based on activity
@@ -1773,7 +1773,7 @@ Ensure all optimizations maintain the core functionality and accuracy while exte
 
 ## Prompt 32: Error Handling
 
-Let's implement comprehensive error handling and recovery mechanisms for the SurfTracker app:
+Let's implement comprehensive error handling and recovery mechanisms for the Dusker app:
 
 1. Create a unified error system:
    - Define domain-specific error enums (NetworkError, StorageError, SensorError, etc.)
@@ -1833,7 +1833,7 @@ Ensure the error handling system is comprehensive but non-intrusive, with a focu
 
 ## Prompt 33: Accessibility
 
-Let's implement comprehensive accessibility features for the SurfTracker app:
+Let's implement comprehensive accessibility features for the Dusker app:
 
 1. Implement VoiceOver support:
    - Add proper accessibility labels and hints
@@ -1893,7 +1893,7 @@ Ensure the app is fully accessible to users with diverse abilities and preferenc
 
 ## Prompt 34: Testing Infrastructure
 
-Let's create a comprehensive testing infrastructure for the SurfTracker app:
+Let's create a comprehensive testing infrastructure for the Dusker app:
 
 1. Implement unit testing framework:
    - Set up XCTest for both targets
@@ -1953,7 +1953,7 @@ Ensure the testing infrastructure is comprehensive, maintainable, and provides q
 
 ## Prompt 35: Documentation
 
-Let's create comprehensive documentation for the SurfTracker app:
+Let's create comprehensive documentation for the Dusker app:
 
 1. Implement code documentation:
    - Add inline comments for complex algorithms
@@ -2013,7 +2013,7 @@ Ensure all documentation is clear, accurate, and maintained alongside code chang
 
 ## Prompt 36: TestFlight Preparation
 
-Let's prepare the SurfTracker app for TestFlight beta testing:
+Let's prepare the Dusker app for TestFlight beta testing:
 
 1. Configure app metadata:
    - Set proper bundle identifier
@@ -2073,7 +2073,7 @@ Ensure the TestFlight preparation creates a seamless experience for testers whil
 
 ## Prompt 37: App Store Submission
 
-Let's prepare the SurfTracker app for App Store submission:
+Let's prepare the Dusker app for App Store submission:
 
 1. Create App Store assets:
    - Design App Store icon (1024x1024)

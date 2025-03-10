@@ -20,7 +20,11 @@ let package = Package(
         .target(
             name: "DuskerKit",
             dependencies: [],
-            path: "Sources/DuskerKit"),
+            path: "Sources/DuskerKit",
+            resources: [
+                .process("Models/DuskerDataModel.xcdatamodeld"),
+                .process("Models/README.md")
+            ]),
         .testTarget(
             name: "DuskerKitTests",
             dependencies: ["DuskerKit"]),
