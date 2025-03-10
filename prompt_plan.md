@@ -1,5 +1,64 @@
 # Prompt Plan
 
+# Table of Contents
+
+## Project Setup and Foundation
+1. [Project Setup](#prompt-1-project-setup)
+2. [Core Data Models](#prompt-2-core-data-models)
+3. [Basic UI Navigation Structure](#prompt-3-basic-ui-navigation-structure)
+4. [Local Storage Implementation](#prompt-4-local-storage-implementation)
+
+## Sensor Integration
+5. [Location Services](#prompt-5-location-services)
+6. [Motion Sensor Framework](#prompt-6-motion-sensor-framework)
+7. [Heart Rate Monitoring](#prompt-7-heart-rate-monitoring)
+8. [Sensor Data Integration](#prompt-8-sensor-data-integration)
+
+## Session Management
+9. [Session Controller](#prompt-9-session-controller)
+10. [Basic Session UI](#prompt-10-basic-session-ui)
+11. [Session Storage](#prompt-11-session-storage)
+12. [Session Metrics Calculation](#prompt-12-session-metrics-calculation)
+
+## Wave Detection and Analysis
+13. [Motion Pattern Recognition](#prompt-13-motion-pattern-recognition)
+14. [Wave Detection Service](#prompt-14-wave-detection-service)
+15. [Wave Storage and Retrieval](#prompt-15-wave-storage-and-retrieval)
+16. [Wave Detection Refinement](#prompt-16-wave-detection-refinement)
+
+## Health Integration
+17. [HealthKit Authorization](#prompt-17-healthkit-authorization)
+18. [Workout Session Recording](#prompt-18-workout-session-recording)
+19. [Health Data Integration](#prompt-19-health-data-integration)
+
+## User Interface
+20. [Session List View](#prompt-20-session-list-view)
+21. [Session Detail View](#prompt-21-session-detail-view)
+22. [Map Visualization](#prompt-22-map-visualization)
+23. [Insights and Analytics](#prompt-23-insights-and-analytics)
+
+## Data Synchronization
+24. [iCloud Setup](#prompt-24-icloud-setup)
+25. [Sync Service](#prompt-25-sync-service)
+26. [Cross-device Experience](#prompt-26-cross-device-experience)
+
+## Environmental Data
+27. [Weather/Conditions API](#prompt-27-weatherconditions-api)
+28. [Tide Information](#prompt-28-tide-information)
+29. [Spot Identification](#prompt-29-spot-identification)
+
+## Refinement and Optimization
+30. [UI Polish](#prompt-30-ui-polish)
+31. [Performance Optimization](#prompt-31-performance-optimization)
+32. [Error Handling](#prompt-32-error-handling)
+33. [Accessibility](#prompt-33-accessibility)
+
+## Quality Assurance and Deployment
+34. [Testing Infrastructure](#prompt-34-testing-infrastructure)
+35. [Documentation](#prompt-35-documentation)
+36. [TestFlight Preparation](#prompt-36-testflight-preparation)
+37. [App Store Submission](#prompt-37-app-store-submission)
+
 ## Prompt 1: Project Setup
 
 Create a new SwiftUI project for a Surf Tracking Apple Watch app with the following specifications:
