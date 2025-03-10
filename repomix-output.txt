@@ -79,6 +79,9 @@ DuskerKit/
       CoreDataTests.swift
       DuskerKitTests.swift
   Package.swift
+fastlane/
+  Appfile
+  Fastfile
 iOS/
   Views/
     ContentView.swift
@@ -110,10 +113,14 @@ watchOS/
   DuskerApp.swift
   Info.plist
 .gitignore
+.ruby-version
+.xcode-version
 blueprint.md
+Gemfile
 project.yml
 prompt_plan.md
 README.md
+SimulatorConfig.xcconfig
 spec.md
 todo.md
 
@@ -3043,6 +3050,52 @@ let package = Package(
 )
 
 ================
+File: fastlane/Appfile
+================
+app_identifier("com.dusker.ios") # The bundle identifier of your app
+# apple_id("[[APPLE_ID]]") # Your Apple Developer Portal username
+# team_id("[[DEV_PORTAL_TEAM_ID]]") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
+
+================
+File: fastlane/Fastfile
+================
+default_platform(:ios)
+
+# Define supported simulators - these are the only ones we support
+IOS_SIMULATOR = "platform=iOS Simulator,name=iPhone 14,OS=16.0"
+WATCHOS_SIMULATOR = "platform=watchOS Simulator,name=Apple Watch Series 9 (45mm),OS=10.0"
+
+# Get absolute path to the project
+PROJECT_PATH = File.expand_path("../Dusker.xcodeproj", __dir__)
+
+platform :ios do
+  desc "Run all tests"
+  lane :test_all do
+    test_ios
+    test_watchos
+    test_kit
+  end
+
+  desc "Run iOS tests"
+  lane :test_ios do
+    sh("xcodebuild test -project '#{PROJECT_PATH}' -scheme Dusker -destination '#{IOS_SIMULATOR}' | bundle exec xcpretty")
+  end
+
+  desc "Run watchOS tests"
+  lane :test_watchos do
+    sh("xcodebuild test -project '#{PROJECT_PATH}' -scheme DuskerWatch -destination '#{WATCHOS_SIMULATOR}' | bundle exec xcpretty")
+  end
+
+  desc "Run DuskerKit tests"
+  lane :test_kit do
+    sh("cd ../DuskerKit && swift test")
+  end
+end
+
+================
 File: iOS/Views/ContentView.swift
 ================
 import SwiftUI
@@ -3787,10 +3840,79 @@ iOSInjectionProject/
 
 # End of https://www.toptal.com/developers/gitignore/api/xcode,swift,macos,ios,watchos
 
+### Ruby ###
+*.gem
+*.rbc
+/.config
+/coverage/
+/InstalledFiles
+/pkg/
+/spec/reports/
+/spec/examples.txt
+/test/tmp/
+/test/version_tmp/
+/tmp/
+
+# Used by dotenv library to load environment variables
+.env
+.env.*
+
+# Ignore Byebug command history file
+.byebug_history
+
+## Documentation cache and generated files:
+/.yardoc/
+/_yardoc/
+/doc/
+/rdoc/
+
+## Environment normalization:
+/.bundle/
+/vendor/bundle
+/lib/bundler/man/
+
+# for a library or gem, you might want to ignore these files since the code is
+# intended to run in multiple environments; otherwise, check them in:
+# Gemfile.lock
+# .ruby-version
+# .ruby-gemset
+
+# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
+.rvmrc
+.rvm/
+
+# Used by RuboCop. Remote config files pulled in from inherit_from directive.
+.rubocop-https?--*
+
+# rbenv
+.rbenv-vars
+
+# End of Ruby-specific patterns
+
+================
+File: .ruby-version
+================
+3.2.2
+
+================
+File: .xcode-version
+================
+
+
 ================
 File: blueprint.md
 ================
 # Blueprint for Surf Tracking Apple Watch App Development
+
+================
+File: Gemfile
+================
+source "https://rubygems.org"
+
+gem "fastlane", "~> 2.219.0"
+gem "xcpretty"
+gem "abbrev" # Required for Ruby 3.2+
+gem "logger" # Required for Ruby 3.2+
 
 ================
 File: project.yml
@@ -6142,9 +6264,58 @@ The project uses SwiftUI for the user interface and follows the MVVM architectur
 - **Services**: Core functionality like location tracking, motion detection, etc.
 - **Utilities**: Helper functions and extensions
 
+## Testing
+
+The project uses fastlane to automate running tests across all platforms.
+
+### Setup
+
+1. Make sure you have Ruby 3.2.2 installed:
+   ```bash
+   # Check Ruby version
+   ruby -v
+   
+   # If needed, install with rbenv
+   rbenv install 3.2.2
+   rbenv local 3.2.2
+   ```
+
+2. Install dependencies:
+   ```bash
+   bundle install
+   ```
+
+### Running Tests
+
+Run all tests (iOS, watchOS, and DuskerKit):
+```bash
+bundle exec fastlane test_all
+```
+
+Or run specific test suites:
+```bash
+# iOS tests only
+bundle exec fastlane test_ios
+
+# watchOS tests only
+bundle exec fastlane test_watchos
+
+# DuskerKit tests only
+bundle exec fastlane test_kit
+```
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+================
+File: SimulatorConfig.xcconfig
+================
+// Standard simulator configurations for testing
+IOS_SIMULATOR_NAME = iPhone 14
+IOS_SIMULATOR_OS = 16.0
+WATCHOS_SIMULATOR_NAME = Apple Watch Series 9 (45mm)
+WATCHOS_SIMULATOR_OS = 10.0
 
 ================
 File: spec.md
