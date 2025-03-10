@@ -1,5 +1,5 @@
 import XCTest
-@testable import Dusker_WatchKit_Extension
+@testable import DuskerWatchExtension
 
 class DuskerWatchTests: XCTestCase {
     

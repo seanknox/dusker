@@ -12,12 +12,9 @@
 		124B168DB520F0F4D1EFC4AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D82B079016A783B8B2736355 /* Assets.xcassets */; };
 		13E209A5E5C0552DB3556E74 /* DuskerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2985C2C6CB290757345F722 /* DuskerTests.swift */; };
 		2547FFB80F7EA3F9447207C2 /* DuskerWatchExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F4A28B6CBC6A25DC3F003BCE /* DuskerWatchExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		3A5FD3CB1848867456399BE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D82B079016A783B8B2736355 /* Assets.xcassets */; };
 		542850D4B20A31DCD37FDD3F /* DuskerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DA876529BA8C029DABDAF1 /* DuskerApp.swift */; };
 		738D7C74DAA740F128BCEAF1 /* DuskerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2D48B9174BFBECB55B2DBDDF /* DuskerKit */; };
-		7544B4270ED1388A8E5CF56C /* DuskerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0655AF2EC079AC19CE87BD /* DuskerApp.swift */; };
 		8ADBD118827117306AA74B14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C2D0CBA9CF69AC6E1EAD32C /* LaunchScreen.storyboard */; };
-		9FA36FF06F9711698BC30FF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A725333288DB4144AEB705F /* ContentView.swift */; };
 		A75961394F3BCFE98C4B5003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACA988CFEA2D177D3767663 /* ContentView.swift */; };
 		AD63C2A7030CCDE9775CC4DF /* DuskerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0655AF2EC079AC19CE87BD /* DuskerApp.swift */; };
 		B028D6271D48B63D6E79BBF8 /* DuskerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 48B244DBA5CEF32B7E752673 /* DuskerKit */; };
@@ -376,8 +373,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D6F3690DAF90F9D60A085FF /* Build configuration list for PBXNativeTarget "DuskerWatch" */;
 			buildPhases = (
-				C65AF5361DAFA3C0FD1D98FA /* Sources */,
-				FC96F3E12F2B1394380A15E2 /* Resources */,
 				B796907E4097FB8E70D7B06C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
@@ -515,14 +510,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC96F3E12F2B1394380A15E2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3A5FD3CB1848867456399BE2 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -540,15 +527,6 @@
 			files = (
 				A75961394F3BCFE98C4B5003 /* ContentView.swift in Sources */,
 				542850D4B20A31DCD37FDD3F /* DuskerApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C65AF5361DAFA3C0FD1D98FA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9FA36FF06F9711698BC30FF1 /* ContentView.swift in Sources */,
-				7544B4270ED1388A8E5CF56C /* DuskerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -731,12 +709,14 @@
 		6C21AD73CAB803B5779DA7E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = watchOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dusker.ios.watchkitapp;
+				PRODUCT_NAME = DuskerWatch;
 				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = 4;
 			};
 			name = Release;
@@ -754,6 +734,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dusker.ios.watchkitapp.watchkitextension;
+				PRODUCT_NAME = DuskerWatchExtension;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -799,12 +780,14 @@
 		D4A3379A9C689531EAE1AAA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = watchOS/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dusker.ios.watchkitapp;
+				PRODUCT_NAME = DuskerWatch;
 				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = 4;
 			};
 			name = Debug;
@@ -841,6 +824,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dusker.ios.watchkitapp.watchkitextension;
+				PRODUCT_NAME = DuskerWatchExtension;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;

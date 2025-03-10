@@ -44,8 +44,9 @@ targets:
     type: application.watchapp2
     platform: watchOS
     sources:
-      - watchOS
-      - Shared
+      - path: watchOS
+        excludes:
+          - "**/*.swift" # Exclude Swift files from the app target
     dependencies:
       - target: DuskerWatchExtension
     info:
@@ -59,6 +60,9 @@ targets:
         DEVELOPMENT_TEAM: ""
         CODE_SIGN_STYLE: Automatic
         PRODUCT_BUNDLE_IDENTIFIER: com.dusker.ios.watchkitapp
+        PRODUCT_NAME: DuskerWatch
+        SKIP_INSTALL: NO
+        ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES: YES
 
   DuskerWatchExtension:
     type: watchkit2-extension
@@ -89,6 +93,8 @@ targets:
         DEVELOPMENT_TEAM: ""
         CODE_SIGN_STYLE: Automatic
         PRODUCT_BUNDLE_IDENTIFIER: com.dusker.ios.watchkitapp.watchkitextension
+        PRODUCT_NAME: DuskerWatchExtension
+        SKIP_INSTALL: YES
 
   DuskerTests:
     type: bundle.unit-test
