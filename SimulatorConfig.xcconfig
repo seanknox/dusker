@@ -1,0 +1,5 @@
+// Standard simulator configurations for testing
+IOS_SIMULATOR_NAME = iPhone 14
+IOS_SIMULATOR_OS = 16.0
+WATCHOS_SIMULATOR_NAME = Apple Watch Series 9 (45mm)
+WATCHOS_SIMULATOR_OS = 10.0 

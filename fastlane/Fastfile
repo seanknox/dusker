@@ -1,0 +1,32 @@
+default_platform(:ios)
+
+# Define supported simulators - these are the only ones we support
+IOS_SIMULATOR = "platform=iOS Simulator,name=iPhone 14,OS=16.0"
+WATCHOS_SIMULATOR = "platform=watchOS Simulator,name=Apple Watch Series 9 (45mm),OS=10.0"
+
+# Get absolute path to the project
+PROJECT_PATH = File.expand_path("../Dusker.xcodeproj", __dir__)
+
+platform :ios do
+  desc "Run all tests"
+  lane :test_all do
+    test_ios
+    test_watchos
+    test_kit
+  end
+
+  desc "Run iOS tests"
+  lane :test_ios do
+    sh("xcodebuild test -project '#{PROJECT_PATH}' -scheme Dusker -destination '#{IOS_SIMULATOR}' | bundle exec xcpretty")
+  end
+
+  desc "Run watchOS tests"
+  lane :test_watchos do
+    sh("xcodebuild test -project '#{PROJECT_PATH}' -scheme DuskerWatch -destination '#{WATCHOS_SIMULATOR}' | bundle exec xcpretty")
+  end
+
+  desc "Run DuskerKit tests"
+  lane :test_kit do
+    sh("cd ../DuskerKit && swift test")
+  end
+end 

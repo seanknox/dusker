@@ -45,6 +45,46 @@ The project uses SwiftUI for the user interface and follows the MVVM architectur
 - **Services**: Core functionality like location tracking, motion detection, etc.
 - **Utilities**: Helper functions and extensions
 
+## Testing
+
+The project uses fastlane to automate running tests across all platforms.
+
+### Setup
+
+1. Make sure you have Ruby 3.2.2 installed:
+   ```bash
+   # Check Ruby version
+   ruby -v
+   
+   # If needed, install with rbenv
+   rbenv install 3.2.2
+   rbenv local 3.2.2
+   ```
+
+2. Install dependencies:
+   ```bash
+   bundle install
+   ```
+
+### Running Tests
+
+Run all tests (iOS, watchOS, and DuskerKit):
+```bash
+bundle exec fastlane test_all
+```
+
+Or run specific test suites:
+```bash
+# iOS tests only
+bundle exec fastlane test_ios
+
+# watchOS tests only
+bundle exec fastlane test_watchos
+
+# DuskerKit tests only
+bundle exec fastlane test_kit
+```
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details. 
