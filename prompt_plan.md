@@ -174,7 +174,7 @@ Include unit tests for:
 2. Correct data passing between views
 3. UI rendering tests for main components
 
-Make sure all UI elements follow accessibility best practices and support Dynamic Type.
+Make sure all UI elements follow accessibility best practices and support Dynamic Type. Run all of the new unit tests. Then, run all tests for the project using fastlane.
 
 ## Prompt 4: Local Storage Implementation
 Building on our Core Data models and UI structure, implement the local storage functionality for the Dusker app:

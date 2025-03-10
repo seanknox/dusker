@@ -68,6 +68,12 @@ The project uses fastlane to automate running tests across all platforms.
 
 ### Running Tests
 
+cd into the fastlane directory:
+
+```bash
+cd fastlane
+```
+
 Run all tests (iOS, watchOS, and DuskerKit):
 ```bash
 bundle exec fastlane test_all
