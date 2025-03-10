@@ -1,0 +1,154 @@
+name: Dusker
+options:
+  bundleIdPrefix: com.dusker
+  deploymentTarget:
+    iOS: 16.0
+    watchOS: 9.0
+  xcodeVersion: "14.0"
+  groupSortPosition: top
+  generateEmptyDirectories: true
+
+packages:
+  DuskerKit:
+    path: ./DuskerKit
+
+targets:
+  Dusker:
+    type: application
+    platform: iOS
+    sources:
+      - iOS
+      - Shared
+    dependencies:
+      - package: DuskerKit
+    info:
+      path: iOS/Info.plist
+      properties:
+        CFBundleDisplayName: Dusker
+        UILaunchStoryboardName: LaunchScreen
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        NSLocationWhenInUseUsageDescription: Dusker needs your location to track your surf sessions.
+        NSLocationAlwaysAndWhenInUseUsageDescription: Dusker needs your location to track your surf sessions even when the app is in the background.
+        NSHealthShareUsageDescription: Dusker needs access to your health data to track heart rate during surf sessions.
+        NSHealthUpdateUsageDescription: Dusker needs to save workout data to your Health app.
+        NSMotionUsageDescription: Dusker needs access to motion data to detect waves and track your surfing activity.
+    settings:
+      base:
+        TARGETED_DEVICE_FAMILY: 1,2
+        DEVELOPMENT_TEAM: ""
+        CODE_SIGN_STYLE: Automatic
+        PRODUCT_BUNDLE_IDENTIFIER: com.dusker.ios
+
+  DuskerWatch:
+    type: application.watchapp2
+    platform: watchOS
+    sources:
+      - watchOS
+      - Shared
+    dependencies:
+      - target: DuskerWatchExtension
+    info:
+      path: watchOS/Info.plist
+      properties:
+        CFBundleDisplayName: Dusker
+        WKCompanionAppBundleIdentifier: com.dusker.ios
+    settings:
+      base:
+        TARGETED_DEVICE_FAMILY: 4
+        DEVELOPMENT_TEAM: ""
+        CODE_SIGN_STYLE: Automatic
+        PRODUCT_BUNDLE_IDENTIFIER: com.dusker.ios.watchkitapp
+
+  DuskerWatchExtension:
+    type: watchkit2-extension
+    platform: watchOS
+    sources:
+      - watchOS
+      - Shared
+    dependencies:
+      - package: DuskerKit
+    info:
+      path: watchOS/Info.plist
+      properties:
+        CFBundleDisplayName: Dusker
+        NSExtension:
+          NSExtensionAttributes:
+            WKAppBundleIdentifier: com.dusker.ios.watchkitapp
+          NSExtensionPointIdentifier: com.apple.watchkit
+        NSLocationWhenInUseUsageDescription: Dusker needs your location to track your surf sessions.
+        NSLocationAlwaysAndWhenInUseUsageDescription: Dusker needs your location to track your surf sessions even when the app is in the background.
+        NSHealthShareUsageDescription: Dusker needs access to your health data to track heart rate during surf sessions.
+        NSHealthUpdateUsageDescription: Dusker needs to save workout data to your Health app.
+        NSMotionUsageDescription: Dusker needs access to motion data to detect waves and track your surfing activity.
+        WKBackgroundModes:
+          - workout-processing
+          - location
+    settings:
+      base:
+        DEVELOPMENT_TEAM: ""
+        CODE_SIGN_STYLE: Automatic
+        PRODUCT_BUNDLE_IDENTIFIER: com.dusker.ios.watchkitapp.watchkitextension
+
+  DuskerTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - Tests/iOS
+    dependencies:
+      - target: Dusker
+    settings:
+      base:
+        DEVELOPMENT_TEAM: ""
+        CODE_SIGN_STYLE: Automatic
+        PRODUCT_BUNDLE_IDENTIFIER: com.dusker.ios.tests
+        GENERATE_INFOPLIST_FILE: YES
+
+  DuskerWatchTests:
+    type: bundle.unit-test
+    platform: watchOS
+    sources:
+      - Tests/watchOS
+    dependencies:
+      - target: DuskerWatchExtension
+    settings:
+      base:
+        DEVELOPMENT_TEAM: ""
+        CODE_SIGN_STYLE: Automatic
+        PRODUCT_BUNDLE_IDENTIFIER: com.dusker.ios.watchkitapp.watchkitextension.tests
+        GENERATE_INFOPLIST_FILE: YES
+
+schemes:
+  Dusker:
+    build:
+      targets:
+        Dusker: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - DuskerTests
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
+
+  DuskerWatch:
+    build:
+      targets:
+        DuskerWatch: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - DuskerWatchTests
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release 

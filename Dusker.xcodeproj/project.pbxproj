@@ -1,0 +1,966 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02F577CE450C4D2796AB4FC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A725333288DB4144AEB705F /* ContentView.swift */; };
+		0A599514E26642D14158D1D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D82B079016A783B8B2736355 /* Assets.xcassets */; };
+		124B168DB520F0F4D1EFC4AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D82B079016A783B8B2736355 /* Assets.xcassets */; };
+		13E209A5E5C0552DB3556E74 /* DuskerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2985C2C6CB290757345F722 /* DuskerTests.swift */; };
+		2547FFB80F7EA3F9447207C2 /* DuskerWatchExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F4A28B6CBC6A25DC3F003BCE /* DuskerWatchExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3A5FD3CB1848867456399BE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D82B079016A783B8B2736355 /* Assets.xcassets */; };
+		542850D4B20A31DCD37FDD3F /* DuskerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DA876529BA8C029DABDAF1 /* DuskerApp.swift */; };
+		738D7C74DAA740F128BCEAF1 /* DuskerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2D48B9174BFBECB55B2DBDDF /* DuskerKit */; };
+		7544B4270ED1388A8E5CF56C /* DuskerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0655AF2EC079AC19CE87BD /* DuskerApp.swift */; };
+		8ADBD118827117306AA74B14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C2D0CBA9CF69AC6E1EAD32C /* LaunchScreen.storyboard */; };
+		9FA36FF06F9711698BC30FF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A725333288DB4144AEB705F /* ContentView.swift */; };
+		A75961394F3BCFE98C4B5003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACA988CFEA2D177D3767663 /* ContentView.swift */; };
+		AD63C2A7030CCDE9775CC4DF /* DuskerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0655AF2EC079AC19CE87BD /* DuskerApp.swift */; };
+		B028D6271D48B63D6E79BBF8 /* DuskerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 48B244DBA5CEF32B7E752673 /* DuskerKit */; };
+		D7E4855AA1A8CD5AF0F808E5 /* DuskerWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31F2C52E14AF42FC36E3F9 /* DuskerWatchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1982BDFE09185CAD10FBA7EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3BD4F94937D24770584A0E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE825F5BD5B41E21DB6E82B5;
+			remoteInfo = Dusker;
+		};
+		38552C9F1346BD720DA8D9D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3BD4F94937D24770584A0E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7425B7FBB55255A7AD3EF391;
+			remoteInfo = DuskerWatchExtension;
+		};
+		6CDEF28AD660103B086CA0E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3BD4F94937D24770584A0E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7425B7FBB55255A7AD3EF391;
+			remoteInfo = DuskerWatchExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B796907E4097FB8E70D7B06C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2547FFB80F7EA3F9447207C2 /* DuskerWatchExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		018E1663A9795B6B09E7F3C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		05DA876529BA8C029DABDAF1 /* DuskerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuskerApp.swift; sourceTree = "<group>"; };
+		230260BF62A8ECA1F4329C60 /* DuskerKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DuskerKit; path = DuskerKit; sourceTree = SOURCE_ROOT; };
+		243F8F905220C4D8A0322F59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4719ABA65087870AAF1F68CF /* Dusker.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Dusker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ACA988CFEA2D177D3767663 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6C2D0CBA9CF69AC6E1EAD32C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9A725333288DB4144AEB705F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B17EAF926DEC92F2B629EE13 /* DuskerWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuskerWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2985C2C6CB290757345F722 /* DuskerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuskerTests.swift; sourceTree = "<group>"; };
+		BE0655AF2EC079AC19CE87BD /* DuskerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuskerApp.swift; sourceTree = "<group>"; };
+		D82B079016A783B8B2736355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBD685255D65FD883C230073 /* DuskerWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuskerWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E11ACC8B5244D1593EA1DD1F /* DuskerTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DuskerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4A28B6CBC6A25DC3F003BCE /* DuskerWatchExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DuskerWatchExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA31F2C52E14AF42FC36E3F9 /* DuskerWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuskerWatchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15D967C4D90B8C9AEB764855 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B028D6271D48B63D6E79BBF8 /* DuskerKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AD6FB3CD3B6A0543F0BEC84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				738D7C74DAA740F128BCEAF1 /* DuskerKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09135C2E44D9B41EE7028172 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		09FB816E8780D14F9FF516AA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		0D095D9587CD39004914B659 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		150A4F57B95EE62AF8C0EABD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D82B079016A783B8B2736355 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1D53292C9F2A3A6798BEF6B5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B2985C2C6CB290757345F722 /* DuskerTests.swift */,
+			);
+			name = iOS;
+			path = Tests/iOS;
+			sourceTree = "<group>";
+		};
+		24D44582342C0DBA62C1D7F3 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				A8CB4DBCA04F351A4FF02EBC /* Extensions */,
+				3F03EF523FEE5C52E809A924 /* Models */,
+				CF18826F7A9E0B05B7E55AF4 /* Resources */,
+				A2390302D544539CFC819081 /* Services */,
+				0D095D9587CD39004914B659 /* Utilities */,
+				80EBC55A5134AD440A55E98A /* ViewModels */,
+				58E64720B9426FF257C2631F /* Views */,
+				BE0655AF2EC079AC19CE87BD /* DuskerApp.swift */,
+				018E1663A9795B6B09E7F3C7 /* Info.plist */,
+			);
+			path = watchOS;
+			sourceTree = "<group>";
+		};
+		2CBB8CD6DEF03B1DD0623DE6 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				FA31F2C52E14AF42FC36E3F9 /* DuskerWatchTests.swift */,
+			);
+			name = watchOS;
+			path = Tests/watchOS;
+			sourceTree = "<group>";
+		};
+		39206537B4D21CF602AFC3E1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E569FE9D8DE255F359F5DDDF /* Extensions */,
+				CA901ED74F7BFA24752547F1 /* Models */,
+				F4B565FA6724B26700CA87E9 /* Resources */,
+				FEBBD27A9AFA3EC3047808D1 /* Services */,
+				09FB816E8780D14F9FF516AA /* Utilities */,
+				5DE020EBB1FE1EE332909B95 /* ViewModels */,
+				7CCEA5BBE921A9DA354B2448 /* Views */,
+				05DA876529BA8C029DABDAF1 /* DuskerApp.swift */,
+				243F8F905220C4D8A0322F59 /* Info.plist */,
+				6C2D0CBA9CF69AC6E1EAD32C /* LaunchScreen.storyboard */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		3F03EF523FEE5C52E809A924 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		58E64720B9426FF257C2631F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9A725333288DB4144AEB705F /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5DE020EBB1FE1EE332909B95 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		60C0F56F4FEBA6CB9C209012 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E1AEED5E25A590D91F8A7F3D /* Extensions */,
+				C0222D2D5733CF61143AC37A /* Models */,
+				150A4F57B95EE62AF8C0EABD /* Resources */,
+				E3AF67F1D538461BE7A75E63 /* Services */,
+				09135C2E44D9B41EE7028172 /* Utilities */,
+				93302AB78A5459A2A0B9A02B /* ViewModels */,
+				E09E147C027DD456760349CF /* Views */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		7CCEA5BBE921A9DA354B2448 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5ACA988CFEA2D177D3767663 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		80EBC55A5134AD440A55E98A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		850DDAD8AB74DBCF5F5AC6FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4719ABA65087870AAF1F68CF /* Dusker.app */,
+				E11ACC8B5244D1593EA1DD1F /* DuskerTests.xctest */,
+				DBD685255D65FD883C230073 /* DuskerWatch.app */,
+				F4A28B6CBC6A25DC3F003BCE /* DuskerWatchExtension.appex */,
+				B17EAF926DEC92F2B629EE13 /* DuskerWatchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93302AB78A5459A2A0B9A02B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A2390302D544539CFC819081 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A8CB4DBCA04F351A4FF02EBC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B87F8C86A3859FDEBFABDB7F = {
+			isa = PBXGroup;
+			children = (
+				39206537B4D21CF602AFC3E1 /* iOS */,
+				1D53292C9F2A3A6798BEF6B5 /* iOS */,
+				E4B8A07BCA6308A11E7F4D8E /* Packages */,
+				60C0F56F4FEBA6CB9C209012 /* Shared */,
+				24D44582342C0DBA62C1D7F3 /* watchOS */,
+				2CBB8CD6DEF03B1DD0623DE6 /* watchOS */,
+				850DDAD8AB74DBCF5F5AC6FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0222D2D5733CF61143AC37A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CA901ED74F7BFA24752547F1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CF18826F7A9E0B05B7E55AF4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E09E147C027DD456760349CF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E1AEED5E25A590D91F8A7F3D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E3AF67F1D538461BE7A75E63 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E4B8A07BCA6308A11E7F4D8E /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				230260BF62A8ECA1F4329C60 /* DuskerKit */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		E569FE9D8DE255F359F5DDDF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F4B565FA6724B26700CA87E9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FEBBD27A9AFA3EC3047808D1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7425B7FBB55255A7AD3EF391 /* DuskerWatchExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D057924C602A644064E6D92 /* Build configuration list for PBXNativeTarget "DuskerWatchExtension" */;
+			buildPhases = (
+				E3CC10ABCE5509236A678027 /* Sources */,
+				547A69B93BA3AB8205A4BE75 /* Resources */,
+				7AD6FB3CD3B6A0543F0BEC84 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DuskerWatchExtension;
+			packageProductDependencies = (
+				2D48B9174BFBECB55B2DBDDF /* DuskerKit */,
+			);
+			productName = DuskerWatchExtension;
+			productReference = F4A28B6CBC6A25DC3F003BCE /* DuskerWatchExtension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		7F61B1C2AF8E1C2F6B9DF692 /* DuskerWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D6F3690DAF90F9D60A085FF /* Build configuration list for PBXNativeTarget "DuskerWatch" */;
+			buildPhases = (
+				C65AF5361DAFA3C0FD1D98FA /* Sources */,
+				FC96F3E12F2B1394380A15E2 /* Resources */,
+				B796907E4097FB8E70D7B06C /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F3D05213AD609FBCF3A80E8 /* PBXTargetDependency */,
+			);
+			name = DuskerWatch;
+			productName = DuskerWatch;
+			productReference = DBD685255D65FD883C230073 /* DuskerWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		87EEA91FF43B096FB8958218 /* DuskerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE7FD01A568C2B25642BE1F1 /* Build configuration list for PBXNativeTarget "DuskerTests" */;
+			buildPhases = (
+				353158534737F6EB3F5A1605 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3B8AC0DE41DFC11AC99DD2E /* PBXTargetDependency */,
+			);
+			name = DuskerTests;
+			productName = DuskerTests;
+			productReference = E11ACC8B5244D1593EA1DD1F /* DuskerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AE825F5BD5B41E21DB6E82B5 /* Dusker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54D44AB96E643C39A7980EBE /* Build configuration list for PBXNativeTarget "Dusker" */;
+			buildPhases = (
+				5C7582C4E9620220F4164ED2 /* Sources */,
+				BC68146B451F6454A5914AAF /* Resources */,
+				15D967C4D90B8C9AEB764855 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dusker;
+			packageProductDependencies = (
+				48B244DBA5CEF32B7E752673 /* DuskerKit */,
+			);
+			productName = Dusker;
+			productReference = 4719ABA65087870AAF1F68CF /* Dusker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5485B4918A630B9E1B59E55 /* DuskerWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE00C8071BF3166BF15A976D /* Build configuration list for PBXNativeTarget "DuskerWatchTests" */;
+			buildPhases = (
+				FEB29D5EAA3DE8E418D87A06 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B11ED6A7F018375D87D9DAB6 /* PBXTargetDependency */,
+			);
+			name = DuskerWatchTests;
+			productName = DuskerWatchTests;
+			productReference = B17EAF926DEC92F2B629EE13 /* DuskerWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E3BD4F94937D24770584A0E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					7425B7FBB55255A7AD3EF391 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					7F61B1C2AF8E1C2F6B9DF692 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					87EEA91FF43B096FB8958218 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					AE825F5BD5B41E21DB6E82B5 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					B5485B4918A630B9E1B59E55 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D2B3663D222D20AC1D43F003 /* Build configuration list for PBXProject "Dusker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = B87F8C86A3859FDEBFABDB7F;
+			packageReferences = (
+				4F4E6AC68C82BEAB713B72F9 /* XCLocalSwiftPackageReference "./DuskerKit" */,
+			);
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE825F5BD5B41E21DB6E82B5 /* Dusker */,
+				87EEA91FF43B096FB8958218 /* DuskerTests */,
+				7F61B1C2AF8E1C2F6B9DF692 /* DuskerWatch */,
+				7425B7FBB55255A7AD3EF391 /* DuskerWatchExtension */,
+				B5485B4918A630B9E1B59E55 /* DuskerWatchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		547A69B93BA3AB8205A4BE75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				124B168DB520F0F4D1EFC4AB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC68146B451F6454A5914AAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A599514E26642D14158D1D8 /* Assets.xcassets in Resources */,
+				8ADBD118827117306AA74B14 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC96F3E12F2B1394380A15E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A5FD3CB1848867456399BE2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		353158534737F6EB3F5A1605 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13E209A5E5C0552DB3556E74 /* DuskerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C7582C4E9620220F4164ED2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75961394F3BCFE98C4B5003 /* ContentView.swift in Sources */,
+				542850D4B20A31DCD37FDD3F /* DuskerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C65AF5361DAFA3C0FD1D98FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA36FF06F9711698BC30FF1 /* ContentView.swift in Sources */,
+				7544B4270ED1388A8E5CF56C /* DuskerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3CC10ABCE5509236A678027 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02F577CE450C4D2796AB4FC3 /* ContentView.swift in Sources */,
+				AD63C2A7030CCDE9775CC4DF /* DuskerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEB29D5EAA3DE8E418D87A06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E4855AA1A8CD5AF0F808E5 /* DuskerWatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F3D05213AD609FBCF3A80E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7425B7FBB55255A7AD3EF391 /* DuskerWatchExtension */;
+			targetProxy = 38552C9F1346BD720DA8D9D5 /* PBXContainerItemProxy */;
+		};
+		B11ED6A7F018375D87D9DAB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7425B7FBB55255A7AD3EF391 /* DuskerWatchExtension */;
+			targetProxy = 6CDEF28AD660103B086CA0E2 /* PBXContainerItemProxy */;
+		};
+		E3B8AC0DE41DFC11AC99DD2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE825F5BD5B41E21DB6E82B5 /* Dusker */;
+			targetProxy = 1982BDFE09185CAD10FBA7EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		117914A9490E5F35C508F88E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		1EC9044530E9A1755BA39E41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		53F288C322A144387449674C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dusker.ios.watchkitapp.watchkitextension.tests;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		6C21AD73CAB803B5779DA7E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = watchOS/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dusker.ios.watchkitapp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		74F354C732986C13ED1B9A23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = watchOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dusker.ios.watchkitapp.watchkitextension;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		8987AD64EDB4992A6C2BAD0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dusker.ios;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8B6B3B1C921BE04C68F62166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dusker.ios;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D4A3379A9C689531EAE1AAA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = watchOS/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dusker.ios.watchkitapp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		D5E3350432B1157DAB0AC3B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dusker.ios.watchkitapp.watchkitextension.tests;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		E6CF2D29B706AC8DD92AE52E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = watchOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dusker.ios.watchkitapp.watchkitextension;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		E82FE160226B1A80C2E340B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dusker.ios.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dusker.app/Dusker";
+			};
+			name = Release;
+		};
+		F69528D3526D81CE36B991D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dusker.ios.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dusker.app/Dusker";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D057924C602A644064E6D92 /* Build configuration list for PBXNativeTarget "DuskerWatchExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74F354C732986C13ED1B9A23 /* Debug */,
+				E6CF2D29B706AC8DD92AE52E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		54D44AB96E643C39A7980EBE /* Build configuration list for PBXNativeTarget "Dusker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B6B3B1C921BE04C68F62166 /* Debug */,
+				8987AD64EDB4992A6C2BAD0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9D6F3690DAF90F9D60A085FF /* Build configuration list for PBXNativeTarget "DuskerWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4A3379A9C689531EAE1AAA6 /* Debug */,
+				6C21AD73CAB803B5779DA7E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AE7FD01A568C2B25642BE1F1 /* Build configuration list for PBXNativeTarget "DuskerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F69528D3526D81CE36B991D4 /* Debug */,
+				E82FE160226B1A80C2E340B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D2B3663D222D20AC1D43F003 /* Build configuration list for PBXProject "Dusker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				117914A9490E5F35C508F88E /* Debug */,
+				1EC9044530E9A1755BA39E41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FE00C8071BF3166BF15A976D /* Build configuration list for PBXNativeTarget "DuskerWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5E3350432B1157DAB0AC3B6 /* Debug */,
+				53F288C322A144387449674C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		4F4E6AC68C82BEAB713B72F9 /* XCLocalSwiftPackageReference "./DuskerKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ./DuskerKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2D48B9174BFBECB55B2DBDDF /* DuskerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DuskerKit;
+		};
+		48B244DBA5CEF32B7E752673 /* DuskerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DuskerKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E3BD4F94937D24770584A0E8 /* Project object */;
+}

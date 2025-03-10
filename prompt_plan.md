@@ -61,7 +61,7 @@
 
 ## Prompt 1: Project Setup
 
-Create a new SwiftUI project for a Surf Tracking Apple Watch app with the following specifications:
+Create a new SwiftUI project for a Surf Tracking Apple Watch app called Dusker with the following specifications:
 
 1. Project name: SurfTracker
 2. Include both watchOS and iOS targets
